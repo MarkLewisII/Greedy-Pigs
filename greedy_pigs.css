@@ -2,7 +2,7 @@ body {
     background-color: lightgray;
 }
 
-#gameboard {
+/* #gameboard {
     background-color: lightblue;
     width: 80%;
     margin: auto;
@@ -21,7 +21,7 @@ tr:nth-child(even) {
 
 td {
     text-align: center;
-}
+} */
 
 button {
     margin: auto;
