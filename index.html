@@ -9,59 +9,75 @@
     <script src="greedy.js"></script>
 </head>
 <body>
-    <table>
+    <!-- <table id="gameboard">
         <tr>
-            <th colspan="2">Player</th>
-            <th colspan="2">Computer</th>
+            <th>Round</th>
+            <th>Player</th>
+            <th>Computer</th>
         </tr>
         <tr>
-            <td>Round</td>
-            <td>Round</td>
-        </tr>
-        <tr>
-            <td class="Round_Score">0</td>
-            <td class="Round_Score">0</td>
-        </tr>
-        <tr>
+            <td>1</td>
             <td class="Round_Score">0</td>
             <td class="Round_Score">0</td>
         </tr>
         <tr>
+            <td>2</td>
             <td class="Round_Score">0</td>
             <td class="Round_Score">0</td>
         </tr>
         <tr>
+            <td>3</td>
             <td class="Round_Score">0</td>
             <td class="Round_Score">0</td>
         </tr>
         <tr>
+            <td>4</td>
             <td class="Round_Score">0</td>
             <td class="Round_Score">0</td>
         </tr>
         <tr>
+            <td>5</td>
             <td class="Round_Score">0</td>
             <td class="Round_Score">0</td>
         </tr>
         <tr>
+            <td>6</td>
             <td class="Round_Score">0</td>
             <td class="Round_Score">0</td>
         </tr>
         <tr>
+            <td>7</td>
             <td class="Round_Score">0</td>
             <td class="Round_Score">0</td>
         </tr>
         <tr>
+            <td>8</td>
             <td class="Round_Score">0</td>
             <td class="Round_Score">0</td>
         </tr>
         <tr>
+            <td>9</td>
             <td class="Round_Score">0</td>
             <td class="Round_Score">0</td>
         </tr>
         <tr>
+            <td>10</td>
+            <td class="Round_Score">0</td>
+            <td class="Round_Score">0</td>
+        </tr>
+        <tr>
+            <td class="Totals">Totals</td>
             <td class="Totals" id="Player_Total"></td>
             <td class="Totals" id="Computer_Total"></td>
         </tr>
-    </table>
+    </table> -->
+    <h2>Player</h2>
+    <h3 id="Player_Round_Score">Round Score</h3>
+    <h3 id="Player_Total">Total</h3>
+    <h2>Computer</h2>
+    <h3 id="Computer_Round_Score">Round Score</h3>
+    <h3 id="Computer_Total">Total</h3>
+    <button disabled="disabled">Bank</button>
+    <button onclick="Dice_Roll();">Roll</button>
 </body>
 </html>

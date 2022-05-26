@@ -1,0 +1,35 @@
+body {
+    background-color: lightgray;
+}
+
+#gameboard {
+    background-color: lightblue;
+    width: 80%;
+    margin: auto;
+    flex: auto;
+    align-content: center;
+    justify-content: center;
+}
+
+th {
+    font-size: large;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(128, 171, 186);
+}
+
+td {
+    text-align: center;
+}
+
+button {
+    margin: auto;
+    flex: auto;
+    align-content: center;
+    justify-content: center;
+}
+
+.Totals {
+    font-size: large;
+}
