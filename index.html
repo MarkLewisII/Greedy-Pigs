@@ -9,75 +9,28 @@
 		<script src="greedy.js"></script>
 	</head>
 	<body>
-		<h2>Player</h2>
-		<h3 id="Player_Round_Score">Round Score</h3>
-		<h3 id="Player_Total">Total</h3>
-		<h2>Computer</h2>
-		<h3 id="Computer_Round_Score">Round Score</h3>
-		<h3 id="Computer_Total">Total</h3>
-		<button id="Bank_Btn" disabled="disabled" onclick="Player_Bank_Score();">Bank</button>
-		<button id="Roll_Btn" onclick="Player_Dice_Roll();">Roll</button>
-		<!-- <table id="gameboard">
-        <tr>
-            <th>Round</th>
-            <th>Player</th>
-            <th>Computer</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td class="Round_Score">0</td>
-            <td class="Round_Score">0</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td class="Round_Score">0</td>
-            <td class="Round_Score">0</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td class="Round_Score">0</td>
-            <td class="Round_Score">0</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td class="Round_Score">0</td>
-            <td class="Round_Score">0</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td class="Round_Score">0</td>
-            <td class="Round_Score">0</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td class="Round_Score">0</td>
-            <td class="Round_Score">0</td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td class="Round_Score">0</td>
-            <td class="Round_Score">0</td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td class="Round_Score">0</td>
-            <td class="Round_Score">0</td>
-        </tr>
-        <tr>
-            <td>9</td>
-            <td class="Round_Score">0</td>
-            <td class="Round_Score">0</td>
-        </tr>
-        <tr>
-            <td>10</td>
-            <td class="Round_Score">0</td>
-            <td class="Round_Score">0</td>
-        </tr>
-        <tr>
-            <td class="Totals">Totals</td>
-            <td class="Totals" id="Player_Total"></td>
-            <td class="Totals" id="Computer_Total"></td>
-        </tr>
-    </table> -->
+		<div id="gameboard">
+			<div id="player_area">
+				<h1>Player</h1>
+				<h3 id="Player_Round_Score">Round Score: 0</h3>
+				<h3 id="Player_Total">Total: 0</h3>
+			</div>
+			<div id="computer_area">
+				<h1>Computer</h1>
+				<h3 id="Computer_Round_Score">Round Score: 0</h3>
+				<h3 id="Computer_Total">Total: 0</h3>
+			</div>
+		</div>
+		<div id="bttn_area">
+			<button	id="Bank_Btn" disabled="disabled" onclick="Player_Bank_Score();">Bank</button>
+			<button id="Roll_Btn" onclick="Player_Dice_Roll();">Roll</button>
+		</div>
+		<div id="dice_area">
+			<h3 id="Current_Roll"></h3>
+		</div>
+        <div>
+            <button id="Restart_Bttn" disabled="disabled" onclick="Restart_Game();">Restart</button>
+        </div>
 	</body>
+	<footer>Mark .T. Lewis Jr. 2022</footer>
 </html>
