@@ -9,17 +9,16 @@ body {
 
 #gameboard {
     border: #ffffff 2px dashed;
-    border-radius: 10px;
+    border-radius: 1em;
     display: flex;
     align-content: center;
     width: auto;
+    padding: 10px;
 }
 
 #player_area{
-
     margin: 0 5px 0 auto;
     padding: 0 5px;
-
     vertical-align: top;
     text-align: center;
 
@@ -28,7 +27,6 @@ body {
 #computer_area {
     margin: 0 auto 0 5px;
     padding: 0 5px;
-
     vertical-align: top;
     text-align: center;
 }
@@ -52,14 +50,11 @@ body {
 }
 
 button {
-    /* background-color: #e000e0; */
     background-color: lightgray;
     font-size: medium;
     border: none;
-    border-radius: 10%;
+    border-radius: 1em;
     padding: 5px 15px;
-    /* margin: 15px  auto; */
-    /* flex: auto; */
     align-content: center;
     justify-content: center;
 }
@@ -73,26 +68,32 @@ button#Roll_Btn{
 }
 
 button:hover{
-    /* background-color: #a802a8; */
     background-color: grey;
 }
 
 button:disabled {
-    /* background-color: #7700cc; */
     background-color: transparent;
     color: transparent;
 }
 
-.Totals {
-    font-size: large;
-}
-
-#Computer_Total {
+#Player_Total, #Computer_Total {
     font-size: 25px;
+    border: solid 2px #ffffff;
+    border-radius: 1em;
 }
 
-#Computer_Round_Score{
+/* #Computer_Total {
+    font-size: 25px;
+} */
+
+#Computer_Round_Score {
     color: transparent;
+}
+
+#player_area, #computer_area {
+    border: solid 2px #ffffff;
+    border-radius: 1em;
+    padding: 1em;
 }
 
 footer{
