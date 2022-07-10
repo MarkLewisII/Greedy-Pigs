@@ -1,12 +1,12 @@
-var current_turn = Boolean(Math.round(Math.random()));
+let current_turn = Boolean(Math.round(Math.random()));
 
 function First_Turn() {
 	current_turn ? Computer_Play() : Player_Play();
 }
 
 //Player functions
-var player_tally = 0;
-var player_total_score = 0;
+let player_tally = 0;
+let player_total_score = 0;
 
 function Player_Play() {
 	document.getElementById("Roll_Btn").disabled = false;
@@ -42,8 +42,8 @@ function Player_Dice_Roll() {
 }
 
 //Computer
-var comp_tally = 0;
-var comp_total_score = 0;
+let comp_tally = 0;
+let comp_total_score = 0;
 
 function Computer_Play() {
 	document.getElementById("Bank_Btn").disabled = true;
@@ -91,7 +91,7 @@ function Render_Player(player_score = 0, player_tally = 0) {
 	document.getElementById("Player_Round_Score").innerHTML = `Round Score: ${player_tally}`;
 
 	if (player_score >= 100) {
-		alert("Plauer wins!!");
+		alert("Player wins!!");
 		document.getElementById("Restart_Bttn").disabled = false;
 	}
 }
@@ -104,6 +104,10 @@ function Render_Computer(comp_total_score, comp_tally) {
 		alert("Computer wins!!");
 		document.getElementById("Restart_Bttn").disabled = false;
 	}
+}
+
+function Endscreen() {
+	
 }
 
 //Restart
